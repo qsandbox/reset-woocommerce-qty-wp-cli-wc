@@ -21,9 +21,14 @@ if (function_exists('apache_setenv')) {
 	apache_setenv( 'no-gzip', 1 );
 }
 
+//ignore_user_abort(true);
 @ini_set('output_buffering', 0);
 @ini_set('zlib.output_compression', 0);
 @ini_set('implicit_flush', 1);
+
+echo str_repeat(' ', 1024);
+ob_flush();
+flush();
 
 try {
 	echo "<pre>";
