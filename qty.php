@@ -1,11 +1,10 @@
 <?php
 
-//header('Content-type: text/plain');
-
 /**
  * Author: Svetoslav Marinov - https://orbisius.com
  * Sets quantity to 0 for all products variations.
- * 
+ * Usage: qty.php?go
+ * After you're done delete the file for security reasons
  * Requires:
  * WP-CLI & WooCommerce to be installed
  * shell_exec
@@ -82,18 +81,3 @@ try {
 echo "</pre>";
 
 exit(0);
-
-//wp wc product_variation list 69 --user=1
-//
-//
-//wp wc product update 72 --stock_quantity=1 --user=1
-//wp wc product update 72 --manage_stock=1 --stock_quantity=7 --user=1
-//
-//
-//
-//wp wc product_variation update 72 --stock_quantity=0
-//
-//
-//	wp wc product update 72 --stock_quantity=0 --user=1
-//
-//
